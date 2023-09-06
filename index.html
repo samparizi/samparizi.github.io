@@ -42,6 +42,20 @@
             text-align: center;
             padding: 10px 0;
         }
+        /* Add animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .image-container {
+            animation: fadeIn 2s;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -60,10 +74,14 @@
     <main>
         <h2>Welcome to Your Website</h2>
         <p>This is the main content area of your website. You can replace this text with your own content.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/400x300" alt="Image Placeholder">
+        </div>
     </main>
     <footer>
-        &copy; 2023 Your Website. All rights reserved.
+        &copy; 2024 Your Website. All rights reserved.
     </footer>
 </body>
 </html>
+
 
