@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "xxx.bb@gmail.com";
+    $to = "sms.ebc@gmail.com";
     $subject = $_POST["title"];
     $message = $_POST["message"];
     $headers = "From: " . $_POST["email"] . "\r\n" .
