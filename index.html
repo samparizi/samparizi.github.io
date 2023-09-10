@@ -103,7 +103,7 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -122,6 +122,24 @@
         <div class="image-container">
             <img src="pics/report.jpg" alt="Performance Report">
         </div>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Send us a message.</p>
+            <form action="send_email.php" method="post">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
 
         <!-- Additional content from previous request -->
         <div class="container">
@@ -154,4 +172,3 @@
     </footer>
 </body>
 </html>
-
