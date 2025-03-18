@@ -3,172 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iota Trading System</title>
-    <style>
-        /* Your existing CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        /* Existing animation and image styles */
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .image-container {
-            animation: fadeIn 2s;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            max-height: 50px; /* Adjust this value as needed */
-        }
-
-        /* Additional styles for the new content */
-        h1 {
-            font-size: 24px;
-        }
-        .container {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        h2 {
-            font-size: 20px;
-            color: #007BFF;
-        }
-        ul {
-            list-style: disc;
-            margin-left: 20px;
-        }
-        p {
-            line-height: 1.4;
-        }
-    </style>
+    <meta name="description" content="Advanced algorithmic trading system powered by AI and mathematical models">
+    <meta name="keywords" content="trading system, algorithmic trading, AI trading, cryptocurrency trading">
+    <title>IotaInverse | Advanced Trading Systems</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Add the logo image -->
-    <img class="logo" src="pics/logo.png" alt="Logo">
-
-    <header>
-        <h1>Iota Inverse</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="pics/logo.png" alt="IotaInverse Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-    <main>
-        <h2>Welcome to Iota Inverse Trading System</h2>
-        <p>At Iota Inverse, we're passionate about harnessing the power of data and cutting-edge technology to redefine the trading landscape. Our advanced algorithmic trading system, rooted in the principles of mathematics and quant science, empowers you with the tools and insights to confidently navigate dynamic financial markets.</p>
 
-        <!-- Add the first image -->
-        <div class="image-container">
-            <img src="pics/first.jpeg" alt="Your Photo">
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Iota Inverse Trading System</h1>
+            <p>Harnessing the power of AI and advanced algorithms to revolutionize digital asset trading</p>
+            <button class="cta-button">Get Started</button>
         </div>
+    </section>
 
-        <!-- Add the title "Performance:" -->
-        <h3>Performance:</h3>
-        
-        <!-- Add the long image name "report.jpg" -->
-        <div class="image-container">
-            <img src="pics/report.jpg" alt="Performance Report">
-        </div>
-
-        <!-- Contact Form -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Have a question or need assistance? Send us a message.</p>
-            <form action="send_email.php" method="post">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-
-        <!-- Additional content from previous request -->
+    <section class="features" id="features">
         <div class="container">
             <h2>Key Features</h2>
-            <ul>
-                <li><strong>10K models trained</strong>: Our system is backed by extensive training with over 10,000 models.</li>
-                <li><strong>77K daily trades</strong>: We execute an impressive 77,000 daily trades.</li>
-                <li><strong>50+ models in production</strong>: With over 50 models in simultaneous production, our system is always on the cutting edge.</li>
-            </ul>
-
-            <p>Iota operates round the clock, predicting and trading digital assets for fund investors, reducing the burdens of manual trading. Our automatic trading system harnesses the latest AI technology, allowing us to trade on major exchanges and markets with varying levels of granularity.</p>
-
-            <h2>What Sets Us Apart</h2>
-            <p><strong>Reduced Risk</strong>: Unlike holding cryptocurrencies, where price fluctuations can lead to losses, Iota profits from volatility independently of crypto prices.</p>
-            <p><strong>Higher Returns</strong>: Our Alpha-seeking strategies consistently yield above-average returns by swiftly adapting to market shifts, making accurate forecasts and trading decisions.</p>
-            <p><strong>Market Agnostic</strong>: Iota thrives in both bull and bear markets, trading all major digital assets with uncorrelated returns, creating more opportunities for investors.</p>
-
-            <h2>Why Choose Iota</h2>
-            <ul>
-                <li><strong>Dedicated Team</strong>: Our technical experts are available 24/7 for monitoring, debugging, and manual interventions.</li>
-                <li><strong>Easy Integration</strong>: Seamlessly integrate our API with your funds to ensure continuous automation, simplifying digital asset trading.</li>
-                <li><strong>Continuous Evolution</strong>: Our team of scientists and researchers closely monitor market changes, ensuring you stay ahead of emerging trends.</li>
-            </ul>
-
-            <p>Discover a new era in digital asset trading with Iota.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>10K+ Models</h3>
+                    <p>Extensive training with over 10,000 models for optimal performance</p>
+                </div>
+                <div class="feature-card">
+                    <h3>77K Daily Trades</h3>
+                    <p>Execute an impressive 77,000 trades daily with precision</p>
+                </div>
+                <div class="feature-card">
+                    <h3>50+ Production Models</h3>
+                    <p>Over 50 models running simultaneously in production</p>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section class="performance" id="performance">
+        <div class="container">
+            <h2>Performance</h2>
+            <div class="image-container">
+                <img src="pics/report.jpg" alt="Performance Report" class="performance-chart">
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2>What Sets Us Apart</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <h3>Reduced Risk</h3>
+                    <p>Profit from volatility independently of crypto prices, minimizing traditional holding risks</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Higher Returns</h3>
+                    <p>Alpha-seeking strategies yielding above-average returns through swift market adaptation</p>
+                </div>
+                <div class="advantage-card">
+                    <h3>Market Agnostic</h3>
+                    <p>Thrive in both bull and bear markets with uncorrelated returns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="send_email.php" method="post">
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        &copy; Iota Inverse Inc. 2023. All rights reserved.
+        <div class="container">
+            <p>&copy; Iota Inverse Inc. 2024. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Disable button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+
+            // Get form data
+            const formData = new FormData(form);
+
+            // Send the form data
+            fetch('send_email.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Show success message
+                alert('Thank you! Your message has been sent.');
+                form.reset();
+            })
+            .catch(error => {
+                // Show error message
+                alert('Sorry, there was an error sending your message. Please try again.');
+            })
+            .finally(() => {
+                // Reset button state
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+        });
+    </script>
 </body>
-</html>
+</html> 
