@@ -560,4 +560,219 @@ html {
     .report-container {
         padding: 0 1rem;
     }
+}
+
+/* About Page Styles */
+.about-hero {
+    padding: 180px 0 100px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.about-hero h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Timeline Styles */
+.timeline {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.timeline-item {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0;
+    bottom: -4rem;
+    width: 2px;
+    background: var(--primary-color);
+    opacity: 0.2;
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+.year {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Team Styles */
+.team {
+    padding: 100px 0;
+    background: var(--background-light);
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    padding: 0 1rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-image {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.team-member h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.member-details {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1.5rem;
+}
+
+.member-details h5 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.member-details p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Values Styles */
+.values {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.values h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--background-light);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero h2 {
+        font-size: 2rem;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timeline-item::before {
+        left: 0;
+    }
+
+    .year {
+        width: auto;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .member-image {
+        width: 150px;
+        height: 150px;
+    }
 } 
